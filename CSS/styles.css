@@ -154,8 +154,10 @@ body {
 
 .footer .logo-link {
     color: var(--logo-inverse-color);
-    letter-spacing: 0.03em;
+  
 }
+
+
   
 /* ==========PORTFOLIO */
 
