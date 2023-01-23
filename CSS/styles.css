@@ -34,6 +34,22 @@ body {
     letter-spacing: 0.04em
 }
 
+.visually-hidden {
+    
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+    
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
+
 /* ==========HEADER */
 
 /* ==========NAVIGATION */
@@ -44,7 +60,8 @@ body {
     text-decoration: none;       
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33    
+    line-height: 1.33;
+    letter-spacing: 0.03em;
 }
 
 .web {
@@ -106,14 +123,10 @@ body {
     color: var(--main-text-color);    
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,5;        
+    line-height: 1.5;        
   }
 
-.subtitle {   
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-}
+
 
 /* ==========SERVICES SECTION */
 
@@ -121,8 +134,10 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;      
-    text-align: center;       
+    text-align: center;
+    
 }
+
 
 /* ==========TEAM SECTION */
 
@@ -139,9 +154,17 @@ body {
 
 .footer .logo-link {
     color: var(--logo-inverse-color);
+    letter-spacing: 0.03em;
 }
   
 /* ==========PORTFOLIO */
+
+.subtitle
+{    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+}
 
 .filter-list {
     background-color: rgba(0, 0, 0, 0.2);
