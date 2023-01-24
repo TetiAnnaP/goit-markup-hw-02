@@ -11,22 +11,55 @@
 
 }
 
-body {
-    background-color: #FFFFFF;
-    color: var(--main-text-color);   
-    font-family: Roboto, sans-serif;
-}
-
-.hero-title, .secondary-title, .subtitle  {
-    color: var(--primary-color);
-}
-
 .menu {
     list-style: none
 }
 
 .link {
     text-decoration: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    color: var(--main-text-color);   
+    font-family: Roboto, sans-serif;
+    
+    
+}
+
+.container {
+    
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+}
+
+.hero-title, .secondary-title, .subtitle  {
+    color: var(--primary-color);
 }
 
 .button {
@@ -52,8 +85,23 @@ body {
 
 /* ==========HEADER== */
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /* ==========NAVIGATION */
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo-link {
+    margin-right: 76px;
     color: var(--primary-color);
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
@@ -66,6 +114,15 @@ body {
 
 .web {
     color: var(--logo-btn-color);
+}
+
+.nav-list {
+        display: flex;
+    align-items: center;
+}
+
+.nav-list .menu:not(:last-child) {
+    margin-right: 40px;
 }
 
 .nav-list .link {
@@ -83,12 +140,21 @@ body {
 }
 /* ==========CONTACTS */
 
+.address-list {
+    display: flex;
+    align-items: center;
+}
+
+.address-list .menu:not(:first-child) {
+    margin-left: 40px;
+}
+
 .address .link{     
     color: var(--main-text-color);
     font-style: normal;
-    
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 16px; 
+    line-height: 1.5;       
+    letter-spacing: 0.02em;
 }
 
 /* ==========HERO SECTION */
@@ -102,7 +168,8 @@ body {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;      
-    text-align: center;        
+    text-align: center;    
+    letter-spacing: 0.02em;
 }
 
 .hero-section .button {
@@ -135,7 +202,8 @@ body {
     font-size: 36px;
     line-height: 1.11;      
     text-align: center;
-    
+    letter-spacing: 0.02em;
+   
 }
 
 
@@ -154,6 +222,7 @@ body {
 
 .footer .logo-link {
     color: var(--logo-inverse-color);
+   
   
 }
 
@@ -166,11 +235,10 @@ body {
     font-size: 20px;
     line-height: 1.2;
     text-align: left;
+    letter-spacing: 0.02em;
 }
 
-.filter-list {
-    background-color: rgba(0, 0, 0, 0.2);
-}
+
 
 .filter-list .button {
     color: var(--logo-btn-color);
